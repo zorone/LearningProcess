@@ -9,7 +9,7 @@ int main()
         for(char i2=48; i2<58; i2++){
             for(char i3=48; i3<58; i3++){
                 for(char i4=48; i4<58; i4++){
-                    if(i2 == i3 && i3 == i4){
+                    if(i2+i3+i4 == 144){
                         continue;
                     }
 
