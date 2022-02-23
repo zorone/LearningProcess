@@ -21,6 +21,7 @@ int main()
                         invalidName[invalidCount][2] = i2;
                         invalidName[invalidCount][3] = i3;
                         invalidName[invalidCount][4] = i4;
+                        invalidName[invalidCount][5] = '\0';
                         
                         invalidCount +=1;
 
@@ -32,6 +33,7 @@ int main()
                     validName[counter][2] = i2;
                     validName[counter][3] = i3;
                     validName[counter][4] = i4;
+                    validName[counter][5] = '\0';
 
                     printf("%s\n", validName[counter]);
                     counter += 1;
@@ -53,12 +55,14 @@ int main()
 
     while(validName[i][0]!='\0'){
         printf("%s\n", validName[i]);
+        i+=1;
     }
 
     i=0;
 
     while(invalidName[i][0]!='\0'){
         printf("%s\n", invalidName[i]);
+        i+=1;
     }
 
     return 0;
