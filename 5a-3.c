@@ -9,6 +9,11 @@ int main()
     char validName[26000][6];
     char invalidName[26000][6];
 
+    FILE *fp1, *fp2;
+
+    fp1 = fopen("./result.txt", "w");
+    fp2 = fopen("./invalid.txt", "w");
+
     for(char i1=65; i1<91; i1++){
         for(char i2=48; i2<58; i2++){
             for(char i3=48; i3<58; i3++){
@@ -25,6 +30,8 @@ int main()
                         
                         invalidCount +=1;
 
+                        fprintf(fp2, "%d  %s\n", invalidCount, invalidName[invalidCount-1]);
+
                         continue;
                     }
 
@@ -38,32 +45,15 @@ int main()
                     printf("%s\n", validName[counter]);
                     counter += 1;
 
+                    fprintf(fp1, "%ld  %s\n", counter, validName[counter-1]);
+
                 }
             }
         }
     }
-    
-    printf("result? (y/n)");
 
-    char arg;
-    scanf("%c", &arg);
-    if(arg!='y'){
-        return 0;
-    }
-
-    int i=0;
-
-    while(validName[i][0]!='\0'){
-        printf("%s\n", validName[i]);
-        i+=1;
-    }
-
-    i=0;
-
-    while(invalidName[i][0]!='\0'){
-        printf("%s\n", invalidName[i]);
-        i+=1;
-    }
+    fclose(fp1);
+    fclose(fp2);
 
     return 0;
 }
