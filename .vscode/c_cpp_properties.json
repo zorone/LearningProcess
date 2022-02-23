@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "name": "llvm_win64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Program Files\\LLVM\\llvm-project\\**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Program Files\\LLVM\\bin\\clang.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-clang-x64",
+            "compilerArgs": [],
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "msys",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\clang.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-clang-x64",
+            "compilerArgs": [],
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,23 @@
+D:\LearningProcess>clang -I "C:\Program Files\LLVM\llvm-project\**" -g .\test.cpp -o .\test
+-v
+clang version 13.0.1
+Target: x86_64-pc-windows-msvc
+Thread model: posix
+InstalledDir: C:\Program Files\LLVM\bin
+clang: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+ "C:\\Program Files\\LLVM\\bin\\clang.exe" -cc1 -triple x86_64-pc-windows-msvc19.14.0 -emit-obj -mrelax-all -mincremental-linker-compatible --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name test.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -gno-column-info -gcodeview -debug-info-kind=constructor -v "-fcoverage-compilation-dir=D:\\LearningProcess" -resource-dir "C:\\Program Files\\LLVM\\lib\\clang\\13.0.1" -I "C:\\Program Files\\LLVM\\llvm-project\\." -internal-isystem "C:\\Program Files\\LLVM\\lib\\clang\\13.0.1\\include" -internal-isystem "C:/Program Files/Microsoft Visual Studio 10.0/VC/include" -internal-isystem "C:/Program Files/Microsoft Visual Studio 9.0/VC/include" -internal-isystem "C:/Program Files/Microsoft Visual Studio 9.0/VC/PlatformSDK/Include" -internal-isystem "C:/Program Files/Microsoft Visual Studio 8/VC/include" -internal-isystem "C:/Program Files/Microsoft Visual Studio 8/VC/PlatformSDK/Include" -fdeprecated-macro "-fdebug-compilation-dir=D:\\LearningProcess" -ferror-limit 19 -fmessage-length=92 -fno-use-cxa-atexit -fms-extensions -fms-compatibility -fms-compatibility-version=19.14 -std=c++14 -fdelayed-template-parsing -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -o "C:\\Users\\user\\AppData\\Local\\Temp\\test-19b71e.o" -x c++ ".\\test.cpp"
+clang -cc1 version 13.0.1 based upon LLVM 13.0.1 default target x86_64-pc-windows-msvc
+ignoring nonexistent directory "C:/Program Files/Microsoft Visual Studio 10.0/VC/include"
+ignoring nonexistent directory "C:/Program Files/Microsoft Visual Studio 9.0/VC/include"
+ignoring nonexistent directory "C:/Program Files/Microsoft Visual Studio 9.0/VC/PlatformSDK/Include"
+ignoring nonexistent directory "C:/Program Files/Microsoft Visual Studio 8/VC/include"
+ignoring nonexistent directory "C:/Program Files/Microsoft Visual Studio 8/VC/PlatformSDK/Include"
+#include "..." search starts here:
+#include <...> search starts here:
+ C:\Program Files\LLVM\llvm-project\.
+ C:\Program Files\LLVM\lib\clang\13.0.1\include
+End of search list.
+.\test.cpp:1:10: fatal error: 'iostream' file not found
+#include <iostream>
+         ^~~~~~~~~~
+1 error generated.
