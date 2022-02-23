@@ -14,51 +14,28 @@ int main()
             for(char i3=48; i3<58; i3++){
                 for(char i4=48; i4<58; i4++){
 
-                    char *string = NULL;
-
                     if(i2+i3+i4 == 144){
 
-                        strcpy(invalidName[invalidCount], "\0");
-
-                        string = &i1;
-                        strcat(invalidName[invalidCount], string);
-                        strcat(invalidName[invalidCount], "-");
-
-                        string = &i2;
-                        strcat(invalidName[invalidCount], string);
-
-                        string = &i3;
-                        strcat(invalidName[invalidCount], string);
-
-                        string = &i4;
-                        strcat(invalidName[invalidCount], string);
+                        invalidName[invalidCount][0] = i1;
+                        invalidName[invalidCount][1] = '-';
+                        invalidName[invalidCount][2] = i2;
+                        invalidName[invalidCount][3] = i3;
+                        invalidName[invalidCount][4] = i4;
                         
                         invalidCount +=1;
-
-                        string = NULL;
 
                         continue;
                     }
 
-                    strcpy(invalidName[invalidCount], "\0");
-
-                    string = &i1;
-                    strcat(invalidName[invalidCount], string);
-                    strcat(invalidName[invalidCount], "-");
-
-                    string = &i2;
-                    strcat(invalidName[invalidCount], string);
-
-                    string = &i3;
-                    strcat(invalidName[invalidCount], string);
-
-                    string = &i4;
-                    strcat(invalidName[invalidCount], string);
+                    validName[counter][0] = i1;
+                    validName[counter][1] = '-';
+                    validName[counter][2] = i2;
+                    validName[counter][3] = i3;
+                    validName[counter][4] = i4;
 
                     printf("%s\n", validName[counter]);
                     counter += 1;
 
-                    string = NULL;
                 }
             }
         }
