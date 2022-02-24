@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+int calc();
+
 int main()
 {   
     long int counter = 0;
@@ -23,8 +25,8 @@ int calc(){
 
     char string[10000000000];
 
-    for(long int i=0; i<10000000000; i++){
-        sprintf(string, "%ld");
+    for(long long int i=0; i<10000000000; i++){
+        sprintf(string, "%lld", i);
 
         printf("%s\n", string);
     }
