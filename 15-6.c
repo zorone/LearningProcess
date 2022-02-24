@@ -106,7 +106,9 @@ char dup(unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigne
     if(g == h) return 1;
     if(g == i) return 1;
     if(g == j) return 1;
+    if(h == i) return 1;
     if(h == j) return 1;
+    if(i == j) return 1;
 
     return 0;
 
