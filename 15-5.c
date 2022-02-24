@@ -12,6 +12,17 @@ int main(){
 
     int_4 n1, n2, n3, n4, n5;
 
+    n1.num1 = 0;
+    n1.num2 = 0;
+    n2.num1 = 0;
+    n2.num2 = 0;
+    n3.num1 = 0;
+    n3.num2 = 0;
+    n4.num1 = 0;
+    n4.num2 = 0;
+    n5.num1 = 0;
+    n5.num2 = 0;
+
     while(n1.num1 < 10){
         n1.num1 += 1;
         n1.num2 += 2;
