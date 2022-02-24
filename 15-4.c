@@ -23,12 +23,9 @@ int main(){
 
 int writeFile(){
 
-    FILE *fp1, *fp2, *fp3, *fp4;
+    FILE *fp1;
 
     fp1 = fopen("./result-15-4.txt", "w");
-    fp2 = fopen("./possible-15-4.txt", "w");
-    fp3 = fopen("./duplicable-15-4.txt", "w");
-    fp4 = fopen("./list-15-4.txt", "w");
 
     char invalidString[] = {"\0"};
     char unusedString[] = {"0123456789"};
@@ -48,27 +45,19 @@ int writeFile(){
     }
 
     fclose(fp1);
-    fclose(fp2);
-    fclose(fp3);
-    fclose(fp4);
-
 
     return 0;
 }
 
-int calc(int level, int *data, char *sp1, *sp2, *decision){
-
+int calc(int level, int *data, char *sp1, char *sp2){
+    char valid[];
+    char invalid[];
     int depth = level;
-
-    
-
-    if(depth<9){
-        depth+=1;
+    for(int i=0; i<10; i++){
+        if(depth!=9){
+            calc(depth+1, data, sp1, sp2);
+        }
     }
-    else{
-        depth-=1;
-    }
-
 
     return depth;
 }
