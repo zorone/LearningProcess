@@ -46,7 +46,7 @@ int main(){
                                     for(n5.num1=0; n5.num1<10; n5.num1++){
                                         if(mdup('i', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                         for(n5.num2=0; n5.num2<10; n5.num2++){
-                                            if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                                            if(dup(n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                             printf("%10lld %u%u%u%u%u%u%u%u%u%u\n", ctr, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2);
                                             ctr+=1;
                                         }
