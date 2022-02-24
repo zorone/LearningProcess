@@ -128,57 +128,57 @@ char nearestNeighbor(unsigned int a, unsigned int b, unsigned int c){
 char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int f, unsigned int g, unsigned int h, unsigned int i, unsigned int j){
     switch(l){
         case 'j':
-            if(a == j) return 1;
-            if(b == j) return 1;
-            if(c == j) return 1;
-            if(d == j) return 1;
-            if(e == j) return 1;
-            if(f == j) return 1;
-            if(g == j) return 1;
-            if(h == j) return 1;
             if(i == j) return 1;
+            if(h == j) return 1;
+            if(g == j) return 1;
+            if(f == j) return 1;
+            if(e == j) return 1;
+            if(d == j) return 1;
+            if(c == j) return 1;
+            if(b == j) return 1;
+            if(a == j) return 1;
         case 'i':
-            if(a == i) return 1;
-            if(b == i) return 1;
-            if(c == i) return 1;
-            if(d == i) return 1;
-            if(e == i) return 1;
-            if(f == i) return 1;
-            if(g == i) return 1;
             if(h == i) return 1;
+            if(g == i) return 1;
+            if(f == i) return 1;
+            if(e == i) return 1;
+            if(d == i) return 1;
+            if(c == i) return 1;
+            if(b == i) return 1;
+            if(a == i) return 1;
         case 'h':
-            if(a == h) return 1;
-            if(b == h) return 1;
-            if(c == h) return 1;
-            if(d == h) return 1;
-            if(e == h) return 1;
-            if(f == h) return 1;
             if(g == h) return 1;
+            if(f == h) return 1;
+            if(e == h) return 1;
+            if(d == h) return 1;
+            if(c == h) return 1;
+            if(b == h) return 1;
+            if(a == h) return 1;
         case 'g':
-            if(a == g) return 1;
-            if(b == g) return 1;
-            if(c == g) return 1;
-            if(d == g) return 1;
-            if(e == g) return 1;
             if(f == g) return 1;
+            if(e == g) return 1;
+            if(d == g) return 1;
+            if(c == g) return 1;
+            if(b == g) return 1;
+            if(a == g) return 1;
         case 'f':
-            if(a == f) return 1;
-            if(b == f) return 1;
-            if(c == f) return 1;
-            if(d == f) return 1;
             if(e == f) return 1;
+            if(d == f) return 1;
+            if(c == f) return 1;
+            if(b == f) return 1;
+            if(a == f) return 1;
         case 'e':
-            if(a == e) return 1;
-            if(b == e) return 1;
-            if(c == e) return 1;
             if(d == e) return 1;
+            if(c == e) return 1;
+            if(b == e) return 1;
+            if(a == e) return 1;
         case 'd':
-            if(a == d) return 1;
-            if(b == d) return 1;
             if(c == d) return 1;
+            if(b == d) return 1;
+            if(a == d) return 1;
         case 'c':
-            if(a == c) return 1;
             if(b == c) return 1;
+            if(a == c) return 1;
         case 'b':
             if(a == b) return 1;
         default:
