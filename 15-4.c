@@ -11,21 +11,17 @@ int deepen(int level, int value);
 int padding(int level, FILE *fptr);
 int newLine(FILE *fptr);
 
-int writeFile(FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4);
+int writeFile();
 
 int main(){   
 
-    writeFile(value, lvr, fp1, fp2, fp3, fp4);
+    writeFile();
 
     return 0;
 }
 
-int calc(){
 
-    return 0;
-}
-
-int writeFile(char *ptr, int level){
+int writeFile(){
 
     FILE *fp1, *fp2, *fp3, *fp4;
 
@@ -34,23 +30,21 @@ int writeFile(char *ptr, int level){
     fp3 = fopen("./duplicable-15-4.txt", "w");
     fp4 = fopen("./list-15-4.txt", "w");
 
-    char value[];
-    char *strptr;
-
     char invalidString[] = {"\0"};
     char unusedString[] = {"0123456789"};
+    char *ptr1 = &invalidString;
+    char *ptr2 = &unusedString;
+
     int lvr = 0;
+    int value = 0;
+    int *val = &value;
 
-    for(int i=0; i<5; i++){
+    char still = 1;
 
-        char still = 1;
+    while(still){
 
-        while(still){
+        lvr = calc(lvr, val, ptr1, ptr2, &still);
 
-            lvr = calc(lvr, strptr, &still);
-
-            }
-        still = 1;
     }
 
     fclose(fp1);
@@ -60,6 +54,23 @@ int writeFile(char *ptr, int level){
 
 
     return 0;
+}
+
+int calc(int level, int *data, char *sp1, *sp2, *decision){
+
+    int depth = level;
+
+    
+
+    if(depth<9){
+        depth+=1;
+    }
+    else{
+        depth-=1;
+    }
+
+
+    return depth;
 }
 
 int padding(int level, FILE *fptr){
