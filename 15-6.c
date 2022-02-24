@@ -30,21 +30,21 @@ int main(){
 
     for(n1.num1=0; n1.num1<10; n1.num1++){
         for(n1.num2=0; n1.num2<10; n1.num2++){
-            if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+            if(mdup('b', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
             for(n2.num1=0; n2.num1<10; n2.num1++){
-                if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                if(mdup('c', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                 for(n2.num2=0; n2.num2<10; n2.num2++){
-                    if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                    if(mdup('d', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                     for(n3.num1=0; n3.num1<10; n3.num1++){
-                        if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                        if(mdup('e', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                         for(n3.num2=0; n3.num2<10; n3.num2++){
-                            if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                            if(mdup('f', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                             for(n4.num1=0; n4.num1<10; n4.num1++){
-                                if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                                if(mdup('g', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                 for(n4.num2=0; n4.num2<10; n4.num2++){
-                                    if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                                    if(mdup('h', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                     for(n5.num1=0; n5.num1<10; n5.num1++){
-                                        if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
+                                        if(mdup('i', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                         for(n5.num2=0; n5.num2<10; n5.num2++){
                                             if(mdup('j', n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
                                             printf("%10lld %u%u%u%u%u%u%u%u%u%u\n", ctr, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2);
