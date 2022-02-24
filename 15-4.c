@@ -1,19 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 
+struct int_4
+{
+    unsigned int num1 : 4;
+    unsigned int num2 : 4;
+};
+
+
 int main(){
 
-    for(char a=0; a<10; a++){
-        for(char b=0; b<10; b++){
-            for(char c=0; b<10; b++){
-                for(char d=0; b<10; b++){
-                    for(char e=0; b<10; b++){
-                        for(char f=0; b<10; b++){
-                            for(char g=0; b<10; b++){
-                                for(char h=0; b<10; b++){
-                                    for(char i=0; b<10; b++){
-                                        for(char j=0; b<10; b++){
-                                            printf("%d%d%d%d%d%d%d%d%d%d\n",a, b, c, d, e, f, g, h, i, j);
+    int_4 n1, n2, n3, n4, n5;
+
+    for(n1.num1=0; n1.num1<10; n1.num1++){
+        for(n1.num2=0; n1.num2<10; n1.num2++){
+            for(n2.num1=0; n2.num1<10; n2.num1++){
+                for(n2.num2=0; n2.num2<10; n2.num2++){
+                    for(n3.num1=0; n3.num1<10; n3.num1++){
+                        for(n3.num2=0; n3.num2<10; n3.num2++){
+                            for(n4.num1=0; n4.num1<10; n4.num1++){
+                                for(n4.num2=0; n4.num2<10; n4.num2++){
+                                    for(n5.num1=0; n5.num1<10; n5.num1++){
+                                        for(n5.num2=0; n5.num2<10; n5.num2++){
+                                            printf("%u%u%u%u%u%u%u%u%u%u\n", n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2);
                                         }
                                     }
                                 }
