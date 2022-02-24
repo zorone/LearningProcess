@@ -16,13 +16,27 @@ int writeFile(FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4);
 int main(){   
 
     FILE *fp1, *fp2, *fp3, *fp4;
+    char value[];
+
+    char invalidString[] = {"\0"};
+    char unusedString[] = {"0123456789"};
+    int lvr = 0;
 
     fp1 = fopen("./result-15-4.txt", "w");
     fp2 = fopen("./possible-15-4.txt", "w");
     fp3 = fopen("./duplicable-15-4.txt", "w");
     fp4 = fopen("./list-15-4.txt", "w");
 
-    writeFile(fp1, fp2, fp3, fp4);
+    for(int i=0; i<10; i++){
+
+        char still = 1;
+
+        while(still){
+            value = "";
+            writeFile(value, lvr, fp1, fp2, fp3, fp4);
+            }
+        still = 1;
+    }
 
     fclose(fp1);
     fclose(fp2);
@@ -32,28 +46,12 @@ int main(){
     return 0;
 }
 
-int calc(FILE *fptr1, FILE *fptr2){
-
-    char invalidString[] = {"\0"};
-    char unusedString[] = {"0123456789"};
+int calc(){
 
     return 0;
 }
 
-int writeFile(FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4){
-    int lvr = 0;
-    deepen(lvr);
-    
-
-    return 0;
-}
-
-int deepen(int level, FILE *fp){
-    for(int i=0; i<10; i++){
-        padding(level, fp);
-
-    }
-
+int writeFile(char *ptr, int level, FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4){
 
     return 0;
 }
