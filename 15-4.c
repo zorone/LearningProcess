@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+char dup(unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int f, unsigned int g, unsigned int h, unsigned int i, unsigned int j);
+
 struct int_4
 {
     unsigned int num1 : 4;
@@ -11,8 +13,19 @@ struct int_4
 int main(){
 
     int_4 n1, n2, n3, n4, n5;
+    n1.num1 = 0;
+    n1.num2 = 0;
+    n2.num1 = 0;
+    n2.num2 = 0;
+    n3.num1 = 0;
+    n3.num2 = 0;
+    n4.num1 = 0;
+    n4.num2 = 0;
+    n5.num1 = 0;
+    n5.num2 = 0;
 
     for(n1.num1=0; n1.num1<10; n1.num1++){
+        dup(n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2);
         for(n1.num2=0; n1.num2<10; n1.num2++){
             for(n2.num1=0; n2.num1<10; n2.num1++){
                 for(n2.num2=0; n2.num2<10; n2.num2++){
@@ -35,4 +48,55 @@ int main(){
     }
 
     return 0;
+}
+
+char dup(unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int f, unsigned int g, unsigned int h, unsigned int i, unsigned int j){
+    if(a == b) return 1;
+    if(a == c) return 1;
+    if(a == d) return 1;
+    if(a == e) return 1;
+    if(a == f) return 1;
+    if(a == g) return 1;
+    if(a == h) return 1;
+    if(a == i) return 1;
+    if(a == j) return 1;
+    if(b == c) return 1;
+    if(b == d) return 1;
+    if(b == e) return 1;
+    if(b == f) return 1;
+    if(b == g) return 1;
+    if(b == h) return 1;
+    if(b == i) return 1;
+    if(b == j) return 1;
+    if(c == d) return 1;
+    if(c == e) return 1;
+    if(c == f) return 1;
+    if(c == g) return 1;
+    if(c == h) return 1;
+    if(c == i) return 1;
+    if(c == j) return 1;
+    if(d == e) return 1;
+    if(d == f) return 1;
+    if(d == g) return 1;
+    if(d == h) return 1;
+    if(d == i) return 1;
+    if(d == j) return 1;
+    if(e == f) return 1;
+    if(e == g) return 1;
+    if(e == h) return 1;
+    if(e == i) return 1;
+    if(e == j) return 1;
+    if(f == g) return 1;
+    if(f == h) return 1;
+    if(f == i) return 1;
+    if(f == j) return 1;
+    if(g == h) return 1;
+    if(g == i) return 1;
+    if(g == j) return 1;
+    if(h == i) return 1;
+    if(h == j) return 1;
+    if(i == j) return 1;
+
+    return 0;
+
 }
