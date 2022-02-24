@@ -8,17 +8,26 @@ int restoreDefault(char *ptr)
 
 int deepen(int level, int value);
 
-int main()
-{   
+int padding(int level, FILE *fptr);
+int newLine(FILE *fptr);
 
-    FILE *fp1, *fp2;
+int writeFile(FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4);
+
+int main(){   
+
+    FILE *fp1, *fp2, *fp3, *fp4;
 
     fp1 = fopen("./result-15-4.txt", "w");
     fp2 = fopen("./possible-15-4.txt", "w");
+    fp3 = fopen("./duplicable-15-4.txt", "w");
+    fp4 = fopen("./list-15-4.txt", "w");
 
-    calc(fp, scope[0], scope[1]);
+    writeFile(fp1, fp2, fp3, fp4);
 
-    fclose(fp);
+    fclose(fp1);
+    fclose(fp2);
+    fclose(fp3);
+    fclose(fp4);
 
     return 0;
 }
@@ -28,24 +37,37 @@ int calc(FILE *fptr1, FILE *fptr2){
     char invalidString[] = {"\0"};
     char unusedString[] = {"0123456789"};
 
-    int lvr=0;
+    return 0;
+}
 
-    for(int lv=0; lv<lvr; lv++){
-            fprintf(fptr, " ");
-    }
-
+int writeFile(FILE *fp1, FILE *fp2, FILE *fp3, FILE *fp4){
+    int lvr = 0;
+    deepen(lvr);
     
-    fprintf(fptr, "\n");
 
+    return 0;
+}
+
+int deepen(int level, FILE *fp){
     for(int i=0; i<10; i++){
-        fprintf(fptr);
+        padding(level, fp);
+
     }
 
 
     return 0;
 }
 
-int deepen(int level, int value){
+int padding(int level, FILE *fptr){
+    for(int lv=0; lv<lvr: lv++){
+        fprintf(fptr, "  ");
+    }
+
+    return 0;
+}
+
+int newLine(FILE *fptr){
+    fprintf(fptr, "\n");
 
     return 0;
 }
