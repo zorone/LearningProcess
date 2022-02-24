@@ -6,49 +6,57 @@ char dup(unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigne
 char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int f, unsigned int g, unsigned int h, unsigned int i, unsigned int j);
 char afar(char l, unsigned int a[0], unsigned int a[1], unsigned int a[2], unsigned int a[3], unsigned int a[4], unsigned int a[5], unsigned int a[6], unsigned int a[7], unsigned int a[8], unsigned int a[9]);
 
-struct int_4
+struct int_4_10
 {
-    unsigned int num1 : 4;
-    unsigned int num2 : 4;
+    unsigned int n0 : 4;
+    unsigned int n1 : 4;
+    unsigned int n2 : 4;
+    unsigned int n3 : 4;
+    unsigned int n4 : 4;
+    unsigned int n5 : 4;
+    unsigned int n6 : 4;
+    unsigned int n7 : 4;
+    unsigned int n8 : 4;
+    unsigned int n9 : 4;
 };
 
 
 int main(){
 
-    int_4 n1, n2, n3, n4, n5;
-    n1.num1 = 0;
-    n1.num2 = 0;
-    n2.num1 = 0;
-    n2.num2 = 0;
-    n3.num1 = 0;
-    n3.num2 = 0;
-    n4.num1 = 0;
-    n4.num2 = 0;
-    n5.num1 = 0;
-    n5.num2 = 0;
+    int_4_10 n;
+    n.n0 = 0;
+    n.n1 = 0;
+    n.n2 = 0;
+    n.n3 = 0;
+    n.n4 = 0;
+    n.n5 = 0;
+    n.n6 = 0;
+    n.n7 = 0;
+    n.n8 = 0;
+    n.n9 = 0;
 
     long long int ctr=0;
 
-    for(n1.num1=0; n1.num1<10; n1.num1++){
-        for(n1.num2=0; n1.num2<10; n1.num2++){
-            if(mdup(1, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-            for(n2.num1=0; n2.num1<10; n2.num1++){
-                if(mdup(2, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                for(n2.num2=0; n2.num2<10; n2.num2++){
-                    if(mdup(3, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                    for(n3.num1=0; n3.num1<10; n3.num1++){
-                        if(mdup(4, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                        for(n3.num2=0; n3.num2<10; n3.num2++){
-                            if(mdup(5, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                            for(n4.num1=0; n4.num1<10; n4.num1++){
-                                if(mdup(6, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                                for(n4.num2=0; n4.num2<10; n4.num2++){
-                                    if(mdup(7, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                                    for(n5.num1=0; n5.num1<10; n5.num1++){
-                                        if(mdup(8, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                                        for(n5.num2=0; n5.num2<10; n5.num2++){
-                                            if(afar(0, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2)) continue;
-                                            printf("%10lld %u%u%u%u%u%u%u%u%u%u\n", ctr, n1.num1, n1.num2, n2.num1, n2.num2, n3.num1, n3.num2, n4.num1, n4.num2, n5.num1, n5.num2);
+    for(n.n0=0; n.n0<10; n.n0++){
+        for(n.n1=0; n.n1<10; n.n1++){
+            if(mdup(1, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+            for(n.n2=0; n.n2<10; n.n2++){
+                if(mdup(2, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                for(n.n3=0; n.n3<10; n.n3++){
+                    if(mdup(3, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                    for(n.n4=0; n.n4<10; n.n4++){
+                        if(mdup(4, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                        for(n.n5=0; n.n5<10; n.n5++){
+                            if(mdup(5, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                            for(n.n6=0; n.n6<10; n.n6++){
+                                if(mdup(6, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                                for(n.n7=0; n.n7<10; n.n7++){
+                                    if(mdup(7, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                                    for(n.n8=0; n.n8<10; n.n8++){
+                                        if(mdup(8, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                                        for(n.n9=0; n.n9<10; n.n9++){
+                                            if(afar(0, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9)) continue;
+                                            printf("%10lld %u%u%u%u%u%u%u%u%u%u\n", ctr, n.n0, n.n1, n.n2, n.n3, n.n4, n.n5, n.n6, n.n7, n.n8, n.n9);
                                             ctr+=1;
                                         }
                                     }
@@ -190,7 +198,7 @@ char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d
 
 }
 
-char afar(char l, unsigned int a[0], unsigned int a[1], unsigned int a[2], unsigned int a[3], unsigned int a[4], unsigned int a[5], unsigned int a[6], unsigned int a[7], unsigned int a[8], unsigned int a[9]){
+char afar(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int h, unsigned int g, unsigned int h, unsigned int i, unsigned int j){
     for(int loop1=l; loop1<10; i++){
         for(int loop2=0; loop2+loop1<5; loop2++){
             if(a[loop2+loop1] == a[9-loop2]) return 1;
