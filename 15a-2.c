@@ -8,7 +8,7 @@ char afar(char l, unsigned int a[0], unsigned int a[1], unsigned int a[2], unsig
 
 struct int_4
 {   
-    unsigned int n[] : 4;
+    unsigned int n[10] : 4;
 };
 
 
@@ -129,7 +129,7 @@ char nearestNeighbor(unsigned int a, unsigned int b, unsigned int c){
 
 char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d, unsigned int e, unsigned int f, unsigned int g, unsigned int h, unsigned int i, unsigned int j){
     switch(l){
-        case 9:
+        case 'j':
             if(i == j) return 1;
             if(h == j) return 1;
             if(g == j) return 1;
@@ -139,7 +139,7 @@ char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d
             if(c == j) return 1;
             if(b == j) return 1;
             if(a == j) return 1;
-        case 8:
+        case 'i':
             if(h == i) return 1;
             if(g == i) return 1;
             if(f == i) return 1;
@@ -148,7 +148,7 @@ char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d
             if(c == i) return 1;
             if(b == i) return 1;
             if(a == i) return 1;
-        case 7:
+        case 'h':
             if(g == h) return 1;
             if(f == h) return 1;
             if(e == h) return 1;
@@ -156,32 +156,32 @@ char mdup(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d
             if(c == h) return 1;
             if(b == h) return 1;
             if(a == h) return 1;
-        case 6:
+        case 'g':
             if(f == g) return 1;
             if(e == g) return 1;
             if(d == g) return 1;
             if(c == g) return 1;
             if(b == g) return 1;
             if(a == g) return 1;
-        case 5:
+        case 'f':
             if(e == f) return 1;
             if(d == f) return 1;
             if(c == f) return 1;
             if(b == f) return 1;
             if(a == f) return 1;
-        case 4:
+        case 'e':
             if(d == e) return 1;
             if(c == e) return 1;
             if(b == e) return 1;
             if(a == e) return 1;
-        case 3:
+        case 'd':
             if(c == d) return 1;
             if(b == d) return 1;
             if(a == d) return 1;
-        case 2:
+        case 'c':
             if(b == c) return 1;
             if(a == c) return 1;
-        case 1:
+        case 'b':
             if(a == b) return 1;
         default:
             return 0;
@@ -197,16 +197,3 @@ char afar(char l, unsigned int a, unsigned int b, unsigned int c, unsigned int d
     }
 
 }
-
-/*
-int awre(){
-    //increase awareness by possibility. At first number, awareness will go high, and decrease slowly.
-    //When exceed, skip that round.
-}
-
-int randPred(){
-    //random check by possibiltty, more awareness, more probability.
-    //Have 2 kinds, full check, or nearestNeighbor/pair.
-}
-
-*/
