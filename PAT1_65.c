@@ -61,15 +61,15 @@ int main(){
                         whiteCount -= 1;
                         break;
                     case 1:
-                        if(!blueCount) invalid = 1; break;
+                        if(!blueCount) invalid = 1;
                         blueCount -= 1;
                         break;
                     case 2:
-                        if(!pinkCount) invalid = 1; break;
+                        if(!pinkCount) invalid = 1;
                         pinkCount -= 1;
                         break;
                     case 3:
-                        if(!pinkCount) invalid = 1; break;
+                        if(!violetCount) invalid = 1;
                         violetCount -= 1;
                         break;
                 }
@@ -86,19 +86,19 @@ int main(){
                 for(i[3] = 0; i[3]<4; i[3]++){
                     switch(i[3]){
                         case 0:
-                            if(!whiteCount) invalid = 1; break;
+                            if(!whiteCount) invalid = 1;
                             whiteCount -= 1;
                             break;
                         case 1:
-                            if(!blueCount) invalid = 1; break;
+                            if(!blueCount) invalid = 1;
                             blueCount -= 1;
                             break;
                         case 2:
-                            if(!pinkCount) invalid = 1; break;
+                            if(!pinkCount) invalid = 1;
                             pinkCount -= 1;
                             break;
                         case 3:
-                            if(!pinkCount) invalid = 1; break;
+                            if(!violetCount) invalid = 1;
                             violetCount -= 1;
                             break;
                     }
@@ -115,19 +115,19 @@ int main(){
                     for(i[4] = 0; i[4]<4; i[4]++){
                         switch(i[4]){
                             case 0:
-                                if(!whiteCount) invalid = 1; break;
+                                if(!whiteCount) invalid = 1;
                                 whiteCount -= 1;
                                 break;
                             case 1:
-                                if(!blueCount) invalid = 1; break;
+                                if(!blueCount) invalid = 1;
                                 blueCount -= 1;
                                 break;
                             case 2:
-                                if(!pinkCount) invalid = 1; break;
+                                if(!pinkCount) invalid = 1;
                                 pinkCount -= 1;
                                 break;
                             case 3:
-                                if(!pinkCount) invalid = 1; break;
+                                if(!violetCount) invalid = 1;
                                 violetCount -= 1;
                                 break;
                         }
@@ -144,19 +144,19 @@ int main(){
                         for(i[5] = 0; i[5]<4; i[5]++){
                             switch(i[5]){
                                 case 0:
-                                    if(!whiteCount) invalid = 1; break;
+                                    if(!whiteCount) invalid = 1;
                                     whiteCount -= 1;
                                     break;
                                 case 1:
-                                    if(!blueCount) invalid = 1; break;
+                                    if(!blueCount) invalid = 1;
                                     blueCount -= 1;
                                     break;
                                 case 2:
-                                    if(!pinkCount) invalid = 1; break;
+                                    if(!pinkCount) invalid = 1;
                                     pinkCount -= 1;
                                     break;
                                 case 3:
-                                    if(!pinkCount) invalid = 1; break;
+                                    if(!violetCount) invalid = 1;
                                     violetCount -= 1;
                                     break;
                             }
@@ -173,19 +173,19 @@ int main(){
                             for(i[6] = 0; i[6]<4; i[6]++){
                                 switch(i[6]){
                                     case 0:
-                                        if(!whiteCount) invalid = 1; break;
+                                        if(!whiteCount) invalid = 1;
                                         whiteCount -= 1;
                                         break;
                                     case 1:
-                                        if(!blueCount) invalid = 1; break;
+                                        if(!blueCount) invalid = 1;
                                         blueCount -= 1;
                                         break;
                                     case 2:
-                                        if(!pinkCount) invalid = 1; break;
+                                        if(!pinkCount) invalid = 1;
                                         pinkCount -= 1;
                                         break;
                                     case 3:
-                                        if(!pinkCount) invalid = 1; break;
+                                        if(!violetCount) invalid = 1;
                                         violetCount -= 1;
                                         break;
                                 }
@@ -202,19 +202,19 @@ int main(){
                                 for(i[7] = 0; i[7]<4; i[7]++){
                                     switch(i[7]){
                                         case 0:
-                                            if(!whiteCount) invalid = 1; break;
+                                            if(!whiteCount) invalid = 1;
                                             whiteCount -= 1;
                                             break;
                                         case 1:
-                                            if(!blueCount) invalid = 1; break;
+                                            if(!blueCount) invalid = 1;
                                             blueCount -= 1;
                                             break;
                                         case 2:
-                                            if(!pinkCount) invalid = 1; break;
+                                            if(!pinkCount) invalid = 1;
                                             pinkCount -= 1;
                                             break;
                                         case 3:
-                                            if(!pinkCount) invalid = 1; break;
+                                            if(!violetCount) invalid = 1;
                                             violetCount -= 1;
                                             break;
                                     }
@@ -231,19 +231,19 @@ int main(){
                                     for(i[8] = 0; i[8]<4; i[8]++){
                                         switch(i[8]){
                                             case 0:
-                                                if(!whiteCount) invalid = 1; break;
+                                                if(!whiteCount) invalid = 1;
                                                 whiteCount -= 1;
                                                 break;
                                             case 1:
-                                                if(!blueCount) invalid = 1; break;
+                                                if(!blueCount) invalid = 1;
                                                 blueCount -= 1;
                                                 break;
                                             case 2:
-                                                if(!pinkCount) invalid = 1; break;
+                                                if(!pinkCount) invalid = 1;
                                                 pinkCount -= 1;
                                                 break;
                                             case 3:
-                                                if(!pinkCount) invalid = 1; break;
+                                                if(!violetCount) invalid = 1;
                                                 violetCount -= 1;
                                                 break;
                                         }
