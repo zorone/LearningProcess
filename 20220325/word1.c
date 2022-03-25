@@ -567,7 +567,7 @@ int main(){
                                                 }
                                                 
                                                 counter += 1;
-                                                fprintf(fptr, "%c%c%c%c%c%c%c%c%c%c%c\n", counter, string[i[0]], string[i[1]], string[i[2]],string[i[3]], string[i[4]], string[i[5]], string[i[6]], string[i[7]], string[i[8]], string[i[9]], string[i[10]]);
+                                                fprintf(fptr, "%c%c%c%c%c%c%c%c%c%c%c\n", string[i[0]], string[i[1]], string[i[2]],string[i[3]], string[i[4]], string[i[5]], string[i[6]], string[i[7]], string[i[8]], string[i[9]], string[i[10]]);
                                                 switch(i[10]){
                                                     case 0: cCount += 1; break;
                                                     case 1: dCount += 1; break;
