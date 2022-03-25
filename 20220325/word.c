@@ -579,7 +579,7 @@ int main(){
                                                     case 7: sCount += 1; break;
                                                 }
                                             }
-                                            switch(1[9]){
+                                            switch(i[9]){
                                                 case 0: cCount += 1; break;
                                                 case 1: dCount += 1; break;
                                                 case 2: eCount += 1; break;
