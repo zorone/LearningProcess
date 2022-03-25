@@ -81,6 +81,7 @@ int main(){
                         case 3: violetCount += 1; break;
                     }
 
+                    invalid = 0;
                     continue;
                 }
                 for(i[3] = 0; i[3]<4; i[3]++){
@@ -110,6 +111,7 @@ int main(){
                             case 3: violetCount += 1; break;
                         }
 
+                        invalid = 0;
                         continue;
                     }
                     for(i[4] = 0; i[4]<4; i[4]++){
@@ -139,6 +141,7 @@ int main(){
                                 case 3: violetCount += 1; break;
                             }
 
+                            invalid = 0;
                             continue;
                         }
                         for(i[5] = 0; i[5]<4; i[5]++){
@@ -168,6 +171,7 @@ int main(){
                                     case 3: violetCount += 1; break;
                                 }
 
+                                invalid = 0;
                                 continue;
                             }
                             for(i[6] = 0; i[6]<4; i[6]++){
@@ -197,6 +201,7 @@ int main(){
                                         case 3: violetCount += 1; break;
                                     }
 
+                                    invalid = 0;
                                     continue;
                                 }
                                 for(i[7] = 0; i[7]<4; i[7]++){
@@ -225,7 +230,8 @@ int main(){
                                             case 2: pinkCount += 1; break;
                                             case 3: violetCount += 1; break;
                                         }
-
+                                        
+                                        invalid = 0;
                                         continue;
                                     }
                                     for(i[8] = 0; i[8]<4; i[8]++){
@@ -255,11 +261,12 @@ int main(){
                                                 case 3: violetCount += 1; break;
                                             }
 
+                                            invalid = 0;
                                             continue;
                                         }
 
                                         counter += 1;
-                                        fprintf(fptr, "%10lld %c%c%c%c%c%c%c%c%c\n", counter, string[i[0]], string[i[1]], string[i[2]],string[i[3]], string[i[4]], string[i[5]], string[i[6]], string[i[7]], string[i[8]]);
+                                        fprintf(fptr, "%7lld %c%c%c%c%c%c%c%c%c\n", counter, string[i[0]], string[i[1]], string[i[2]],string[i[3]], string[i[4]], string[i[5]], string[i[6]], string[i[7]], string[i[8]]);
                                         switch(i[8]){
                                             case 0: whiteCount += 1; break;
                                             case 1: blueCount += 1; break;
